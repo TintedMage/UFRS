@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  border-color: #333333;
+}
+
+body {
+  margin: 0;
+  background-color: #181818;
+  color: #e5e5e5;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  overflow: hidden;
+}
+
+.maplibregl-ctrl-attrib{
+  opacity: 0.4;
+  background: rgba(24, 24, 24, 0.5) !important;
+  transition: opacity 0.2s ease;
+  color: #e5e5e5 !important;
+}
+
+.maplibregl-ctrl-attrib a {
+  color: #e5e5e5 !important;
+} 
+
+.maplibregl-ctrl-attrib:hover {
+  opacity: 1;
+}
+
+
+/* IDK ... but YES! */
+/* Navigation control container */
+.maplibregl-ctrl-group {
+  background: rgba(30, 30, 30, 0.92) !important;
+  border: 1px solid #383838 !important;
+  border-radius: 9px !important;
+  padding: 3px !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25) !important;
+  overflow: hidden;
+  opacity: 0.9;
+  transition: opacity 180ms ease, border-color 180ms ease;
+  scale: 0.8;
+}
+
+/* Individual controls */
+.maplibregl-ctrl-group button {
+  width: 30px !important;
+  height: 30px !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 6px !important;
+  transition: background-color 150ms ease;
+}
+
+/* Muted icons */
+.maplibregl-ctrl-group button span {
+  filter: brightness(0) invert(0.68);
+  transition: filter 150ms ease;
+}
+
+/* Hover */
+.maplibregl-ctrl-group button:hover {
+  background-color: rgba(245, 158, 11, 0.12) !important;
+}
+
+.maplibregl-ctrl-group button:hover span {
+  filter: brightness(0) saturate(100%)
+    invert(73%) sepia(72%) saturate(600%)
+    hue-rotate(358deg) brightness(102%);
+}
+
+/* Focus accessibility */
+.maplibregl-ctrl-group button:focus-visible {
+  outline: 1px solid #f59e0b !important;
+  outline-offset: -2px;
+}
+
+/* Subtle separators */
+.maplibregl-ctrl-group button + button {
+  border-top: 1px solid #383838 !important;
+  border-radius: 0 !important;
+}
+
+/* Hover container */
+.maplibregl-ctrl-group:hover {
+  opacity: 1;
+  border-color: #505050 !important;
+}
