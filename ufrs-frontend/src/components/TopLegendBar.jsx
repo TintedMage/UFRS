@@ -65,12 +65,14 @@ export default function TopLegendBar({
       {/* Right side: Links + View Selector Dropdown */}
       <div className="flex items-center gap-3 shrink-0 text-zinc-400">
         <a
-          href="#docs"
-          onClick={(e) => e.preventDefault()}
-          className="hover:text-amber-400 transition-colors cursor-pointer"
-          title="System Documentation"
+          href="/ufrs_harmonization_comparison.md"
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center gap-1 hover:text-amber-400 transition-colors"
+          title="UFRS Harmonization Comparison"
         >
-          Docs
+          <span>Comparison</span>
+          <ExternalLink className="h-2.5 w-2.5 opacity-60" />
         </a>
         <span className="text-zinc-600">·</span>
         <a
@@ -85,12 +87,14 @@ export default function TopLegendBar({
         </a>
         <span className="text-zinc-600">·</span>
         <a
-          href="#about"
-          onClick={(e) => e.preventDefault()}
-          className="hover:text-amber-400 transition-colors cursor-pointer"
-          title="About UFRS & Team Sygnition"
+          href="/NASASpaceApps2026_Sygnition%283%29.ipynb"
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center gap-1 hover:text-amber-400 transition-colors"
+          title="NASA Space Apps Research Notebook"
         >
-          About
+          <span>Notebook</span>
+          <ExternalLink className="h-2.5 w-2.5 opacity-60" />
         </a>
 
         {/* View Switcher Dropdown (Matching screenshot: View: Harmonised v) */}
