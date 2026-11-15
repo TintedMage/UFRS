@@ -87,6 +87,17 @@ export default function TopLegendBar({
         </a>
         <span className="text-zinc-600">·</span>
         <a
+          href="https://github.com/TintedMage/UFRS"
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center gap-1 hover:text-amber-400 transition-colors"
+          title="UFRS GitHub Repository"
+        >
+          <span>GitHub</span>
+          <ExternalLink className="h-2.5 w-2.5 opacity-60" />
+        </a>
+        <span className="text-zinc-600">·</span>
+        <a
           href="/NASASpaceApps2026_Sygnition%283%29.ipynb"
           target="_blank"
           rel="noreferrer"
